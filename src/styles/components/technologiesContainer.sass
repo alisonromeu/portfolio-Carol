@@ -9,6 +9,9 @@
         flex-wrap: wrap
         gap: 1.5rem
 
+        @media (max-width: 768px)
+            flex-direction: column
+
         .technology-card
             @include mixins.center
             gap: 1rem
@@ -16,6 +19,9 @@
             border: 1px solid #333
             width: 30%
             border-radius: variables.$card-border-radius
+
+            @media (max-width: 768px)  
+                width: 100%
 
             h3
                 color: variables.$text-color
